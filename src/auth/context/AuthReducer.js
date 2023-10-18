@@ -12,7 +12,7 @@ export const AuthReducer = (state = initialState, action) => {
             return {
                 ...state, // => hacemos esto por si existen mas propiedades en nuestro estado
                 logged: true,
-                name: action.payload
+                user: action.payload
             }
         
         case types.logout:
